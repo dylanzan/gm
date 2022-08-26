@@ -27,7 +27,7 @@ func Handler(r *gin.Engine) {
 		context.Redirect(301, targetUrl)
 	})
 	r.GET("/it", func(context *gin.Context) {
-		targetUrl := context.Query("t")
+		targetUrl := context.Query("target")
 		context.Redirect(301, targetUrl)
 	})
 
